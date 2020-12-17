@@ -77,3 +77,39 @@ console.log(email[5]);
 email[4] == "@"
   ? console.log("Enter a valid email add")
   : console.log("this is a nice start for an email add");
+
+
+//SOLUTION
+
+//EX. 1 - 2
+let randomWord = "I am more than 6 characters long";
+
+console.log(randomWord);
+console.log(randomWord[0]);
+console.log(randomWord[6]);
+
+//EX. 3-6
+let name = "Vincent";
+let age = 30;
+let year = 1990;
+console.log(name + " is " + age + " in " + year + ".");
+
+//EX. 7
+let isMarried = true;
+
+//EX. 9 - 11
+let programmingLanguage = "JavaScript";
+let isFun = true;
+console.log(programmingLanguage , isFun);
+console.log(programmingLanguage[0]);
+console.log(programmingLanguage[4]);
+console.log(programmingLanguage.length);
+
+//Ternary 1
+let isStudent = true;
+isStudent == true ? console.log("Ticket costs €5,00") : console.log("icket costs €12,00");
+
+
+//Ternary 2
+let speedCheck = 50;
+speedCheck >= 50 ? console.log("you’re going too fast!") : console.log("ou’re driving below the speed limit, Oma") 
