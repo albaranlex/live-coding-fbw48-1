@@ -2,31 +2,25 @@
 console.log(Math.min(-1, 1, 2, 3, 4));
 console.log(Math.max(-1, 1, 2, 3, 4));
 
-//Rounding Up
-let flt1 = 3321.32321;
-let flt2 = 326.76;
-let flt3 = 76788.7;
-let flt4 = -9.78;
-let flt5 = 43.342;
-
-console.log(Math.ceil(flt1));
-console.log(Math.ceil(flt2));
-console.log(Math.ceil(flt3));
-console.log(Math.ceil(flt4));
-console.log(Math.ceil(flt5));
+//Rounding Up Solution 1
+function roundUp (randomNum) {
+    console.log(Math.ceil(randomNum));
+}
+roundUp(3321.32);
+roundUp(326.76);
+roundUp(76788.7);
+roundUp(-9.78);
+roundUp(43.342);
 
 //Round Down
-let flt6 = 3321.32321;
-let flt7 = 326.76;
-let flt8 = 76788.7;
-let flt9 = -9.78;
-let flt10 = 28.329;
-
-console.log(Math.floor(flt1));
-console.log(Math.floor(flt2));
-console.log(Math.floor(flt3));
-console.log(Math.floor(flt4));
-console.log(Math.floor(flt5));
+function roundDown (randomNum) {
+    console.log(Math.floor(randomNum));
+}
+roundDown(3321.32321);
+roundDown(326.76);
+roundDown(76788.7);
+roundDown(-9.78);
+roundDown(28.329);
 
 //Concatenation
 let intro = "Hi, my name is Alex and I am ";
@@ -41,6 +35,3 @@ console.log(parseInt(str1, 10));
 
 let num1 = "10.05";
 console.log(parseFloat(num1));
-
-
-
