@@ -6,3 +6,6 @@ console.log(Math.floor(Math.random() * 3) + 20);
 
 //Random Numbers between 0 - 10
 console.log(Math.floor(Math.random() * 10) + 1);
+
+//Some more changes
+console.log("Hello");
