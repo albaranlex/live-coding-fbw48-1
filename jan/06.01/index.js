@@ -2,9 +2,10 @@
 console.log(Math.min(-1, 1, 2, 3, 4));
 console.log(Math.max(-1, 1, 2, 3, 4));
 
-//Rounding Up Solution 1
+//Rounding Up Solution
 function roundUp (randomNum) {
-    console.log(Math.ceil(randomNum));
+    let result = Math.ceil(randomNum);
+    console.log(result);
 }
 roundUp(3321.32);
 roundUp(326.76);
@@ -14,7 +15,8 @@ roundUp(43.342);
 
 //Round Down
 function roundDown (randomNum) {
-    console.log(Math.floor(randomNum));
+    let result2 = Math.floor(randomNum);
+    console.log(result2);
 }
 roundDown(3321.32321);
 roundDown(326.76);
