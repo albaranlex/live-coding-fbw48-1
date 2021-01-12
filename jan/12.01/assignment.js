@@ -7,26 +7,17 @@ function isZero(num) {
         return false;
 }
 }
-
 console.log(isZero(3));
 console.log(isZero(0));
 
-//  Dog Years. Create a function which calculates how old a dog is in dog years. 
-//The function should accept one argument that is the dog's age in human years. 
-//PS:  calculate the dog's age in dog years based on the calculation of 1 human year = 7 dog years.
+// Dog Years. 
 function dogYearsCalc(age) {
    let dogsAge = age * 7;
     console.log(`Your dog is ${dogsAge} in dog years.`);
 }
 dogYearsCalc(8);
 
-//  A Lifetime Supply...
-// You just won a lifetime supply of your favorite snack! 
-// The snack company needs to calculate what that actually means and how much they need to give you over your "lifetime". 
-//Create a function to help you calculate that amount for yourself to make sure you get the right amount. 
-//The function should accept two arguments: person age and the amount he will eats per day. 
-//The function should calculate the amount that will be consumed for the rest of your life given a constant maximum age of 100.
-
+// A Lifetime Supply...
 function rightAmount(age, foodConsumption) {
     let lifeTimeFood = age * foodConsumption;
     console.log(`The snack company should provide you with ${lifeTimeFood} units, until you are a ripe old age of 100. Happy snacking!"`);
@@ -34,11 +25,7 @@ function rightAmount(age, foodConsumption) {
 rightAmount(40, 50);
 
 //  Number to Month Name
-// Create a function that takes a number (from 1 to 12) and returns its corresponding month name as a string.
-// For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
-
 let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-
 function whichMonth(num) {
     if (num > 1 && num <= 12) {
         console.log(months[num-1]);
@@ -47,8 +34,7 @@ function whichMonth(num) {
         console.log("Please enter a number between 1 and 12")
     }
 }
-whichMonth(13);
-
+whichMonth(12);
 
 //DRAWING
 //First Shape
@@ -63,46 +49,42 @@ let firstShape = "T";
     console.log(secondShape.repeat(i));
   }
 
+//Third Shape
+let thirdShape = "";
+for (let i = 1; i <= 5; i++) {
+  thirdShape += i + "";
+  console.log(thirdShape);
+}
 
+let fourthShape = "*";
+function pac () {
+  for (let i = 10; i >= 1; i--) {
+    console.log(fourthShape.repeat(i));
+}
+for (let i = 1; i <= 10; i++) {
+  console.log(fourthShape.repeat(i));
+}
+}
+pac();
 
- 
-  
-  
-
-
-/*Second shape
-****
-***
-**
-*
-Third shape
-1
-12
-123
-1234
-12345
-Bounce: Forth shape
-Be creative and show us your Artistic side
-*/
-
-//console.log("--------Exercise-------");
-/*  Finish the following function so it outputs looks like this:
-1
-12
-123
-1234
-12345
- const numbersCount = () => {
+//COUNTER
+const numbersCount = () => {
+  let str = "";
   for (let i = 0; i <= 5; i++) {
     // something
     for (let j = 1; j <= i; j++) {
         // something
     }
-      // something
+      console.log(str);
   }
 };
 numbersCount();
-Bonus: create another function by doing some changes to the previous function in order to have the following outputs :
+
+//REVERSE COUNTER
+
+
+
+/*Bonus: create another function by doing some changes to the previous function in order to have the following outputs :
   12345
   1234
   123
