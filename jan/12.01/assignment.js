@@ -50,23 +50,24 @@ function whichMonth(num) {
 whichMonth(13);
 
 
-// Try to do it by yourself and don't look in yesterday solution. I trust you :)
-// Count Occurrences.
-// Create a function that accepts two arguments: a string and a letter. The function should count the number of occurrences of that letter in the string.
+//DRAWING
+//First Shape
+let firstShape = "T";
+  for (let i = 1; i <= 4; i++) {
+    console.log(firstShape.repeat(i));
+  }
+   
+//Second Shape
+  let secondShape = "*";
+  for (let i = 4; i >= 1; i--) {
+    console.log(secondShape.repeat(i));
+  }
 
-// Example:
 
-// countOccurrences("this is a string", "i") ➞ 3
 
-// draw this shapes in your console
-
-//First shape
-function art1 (baseShape) {
-for (var i = 0; i <=4; i++) {
-    console.log(baseShape);
-    }
-}
-art1("T");
+ 
+  
+  
 
 
 /*Second shape
