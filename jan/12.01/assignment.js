@@ -19,8 +19,11 @@ dogYearsCalc(8);
 
 // A Lifetime Supply...
 function rightAmount(age, foodConsumption) {
-    let lifeTimeFood = age * foodConsumption;
-    console.log(`The snack company should provide you with ${lifeTimeFood} units, until you are a ripe old age of 100. Happy snacking!"`);
+    let result = "";
+    let amountPerYear = foodConsumption * 365;
+    let yearsToLive = 100 - age;
+    result = amountPerYear * yearsToLive;
+    console.log(`The snack company should provide you with ${result} units, until you are a ripe old age of 100. Happy snacking!"`);
 }
 rightAmount(40, 50);
 
@@ -92,15 +95,28 @@ numbersCount();
   1
 */
 
-//console.log("--------Exercise-------");
-/* create a function should that checks if a store contains a specific product in it's inventory.
-for example:
-let storeArr= ["milk", "eggs", "cheese", "butter"];
-// try includes might help :)
-// Examples
-inventoryCheck("cheese") returns true
-inventoryCheck( "ham") returns false 
-*/
+let printer = "";
+for (let i = 1; i <= 5; i++) {
+  printer += i + "";
+  console.log(printer);
+}
+//Inventory Check
+
+function inventoryCheck (str) {
+  let storeArr = ["milk", "eggs", "cheese", "butter"];
+  let available = storeArr.includes(str);
+  if (available) {
+    return true;
+  }
+  else {
+   return false;
+  }
+}
+
+console.log(inventoryCheck("milk")); //or console.log(inventoryCheck("milk"))
+console.log(inventoryCheck("coffee")); // console.log(inventoryCheck("coffee"))
+
+
 
 //console.log("--------Exercise-------");
 // Extra work :)
