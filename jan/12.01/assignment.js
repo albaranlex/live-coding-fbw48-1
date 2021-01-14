@@ -9,6 +9,7 @@ function isZero(num) {
 }
 console.log(isZero(3));
 console.log(isZero(0));
+console.log("-----------------");
 
 // Dog Years. 
 function dogYearsCalc(age) {
@@ -16,6 +17,7 @@ function dogYearsCalc(age) {
     console.log(`Your dog is ${dogsAge} in dog years.`);
 }
 dogYearsCalc(8);
+console.log("-----------------");
 
 // A Lifetime Supply...
 function rightAmount(age, foodConsumption) {
@@ -26,6 +28,7 @@ function rightAmount(age, foodConsumption) {
     console.log(`The snack company should provide you with ${result} units, until you are a ripe old age of 100. Happy snacking!"`);
 }
 rightAmount(40, 50);
+console.log("-----------------");
 
 //  Number to Month Name
 let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
@@ -38,6 +41,7 @@ function whichMonth(num) {
     }
 }
 whichMonth(12);
+console.log("-----------------");
 
 //DRAWING
 //First Shape
@@ -45,12 +49,15 @@ let firstShape = "T";
   for (let i = 1; i <= 4; i++) {
     console.log(firstShape.repeat(i));
   }
+
+  console.log("-----------------");
    
 //Second Shape
   let secondShape = "*";
   for (let i = 4; i >= 1; i--) {
     console.log(secondShape.repeat(i));
   }
+  console.log("-----------------");
 
 //Third Shape
 let thirdShape = "";
@@ -58,50 +65,49 @@ for (let i = 1; i <= 5; i++) {
   thirdShape += i + "";
   console.log(thirdShape);
 }
+console.log("-----------------");
 
+//Fourth Shape
 let fourthShape = "*";
 function pac () {
-  for (let i = 10; i >= 1; i--) {
+  for (let i = 6; i >= 1; i--) {
     console.log(fourthShape.repeat(i));
-}
-for (let i = 1; i <= 10; i++) {
-  console.log(fourthShape.repeat(i));
 }
 }
 pac();
+console.log("-----------------");
 
-//COUNTER
-const numbersCount = () => {
-  let str = "";
+//COUNTER (NEED TO)
+const numCount = () => {
+  let text = "";
   for (let i = 0; i <= 5; i++) {
-    // something
     for (let j = 1; j <= i; j++) {
-        // something
+      text += j + " ";  // something
     }
-      console.log(str);
+      console.log(text);
   }
 };
-numbersCount();
-
-//REVERSE COUNTER
-
+numCount();
+console.log("-------------");
 
 
-/*Bonus: create another function by doing some changes to the previous function in order to have the following outputs :
-  12345
-  1234
-  123
-  12
-  1
-*/
+/*Count Occurences (NEED TO DO)
+function countOccurences (str, letter) {
+  let result = "";
+  let count = check.length;
 
-let printer = "";
-for (let i = 1; i <= 5; i++) {
-  printer += i + "";
-  console.log(printer);
+  if str = str.contains(letter) 
+  return count;
+  }
+  else {
+
+  }
+
 }
-//Inventory Check
 
+countOccurences("This is a string", "i"); */
+
+//Inventory Check
 function inventoryCheck (str) {
   let storeArr = ["milk", "eggs", "cheese", "butter"];
   let available = storeArr.includes(str);
@@ -113,19 +119,43 @@ function inventoryCheck (str) {
   }
 }
 
-console.log(inventoryCheck("milk")); //or console.log(inventoryCheck("milk"))
-console.log(inventoryCheck("coffee")); // console.log(inventoryCheck("coffee"))
+console.log(inventoryCheck("milk")); 
+console.log(inventoryCheck("coffee"));
 
+//REVERSE COUNTER
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1 
 
+let text ="";
+for (i = 5; i >= 1; i--) {
+  text = "";
+  for (let j = 1; j <= 5; j++) {
+    text += j;
+  }
+}
 
-//console.log("--------Exercise-------");
-// Extra work :)
-// create a repo for this app. we are coming later to it :)
-// Create a program that generate a random password with the length of 30 character, every time you call the function should give you a different password
+/*const revNumCount = () => {
+  let text
+  for (let i = 5; i >= 1; i--) {
+    text = "";
+    for (let j = 1; j <= i; j++) {
+      text += j;
+    }
+      console.log(text);
+  }
+}
 
-// Examples you will have other passwords for sure
+/* 
+Round 1:
+-  i = 5;
+- j = 1;
+- grab my text + J (1)
+- Text = 1
 
-// passwordGen()  ➞ Y3mI9x7bvPY86T?oM§hIbgh!MLwA77N
-// passwordGen()  ➞ Oy$tkBGoo5fg§mO4AdV&Kh8XXZR4d7K
-// passwordGen()  ➞ v0ZwDrn@hfI€kOKWH§k6kqub6zfpuyP
-//console.log("--------Exercise-------");
+Round 2
+
+revNumCount();
+console.log("-----------------"); */

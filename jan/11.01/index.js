@@ -15,7 +15,7 @@ const login = () => {
 };
 login()
 
-//Arrays  (Assigning Multiple Values to a Variable)
+//Arrays  / (Assigning Multiple Values to a Variable)
 let namesArr = ["Mark", "Alexis", "Albaran"];
 console.log(namesArr[0]);
 
@@ -123,7 +123,6 @@ for (var i = 1; i <= 4; i++) {
     }
    
 }
-
 console.log(text);
 console.log("-------------");
 
@@ -135,3 +134,18 @@ console.log(stToArr);
 //JOIN
 let backToSt = stToArr.join(" ");
 console.log(backToSt);
+
+//countOccurences("This is a string", "i") -> 3
+
+const countOccurrences = (str,chr) => {
+    let strIntoArr = str.split("");
+    let count = 0;
+    for (let i = 0; i < strIntoArr.length; i++) {
+        if (strIntoArr[i] == chr) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countOccurrences("this is a string", "i"));
+
