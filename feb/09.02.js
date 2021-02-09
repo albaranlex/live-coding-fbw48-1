@@ -17,3 +17,24 @@ const person = {
   adress: "Hamburg",
 };
 console.log(Object.entries(person));
+
+//Array of Arrays
+const arrOfArr = [
+    [1,2],
+    [2,3],
+    [3,4]
+];
+console.log(arrOfArr[1])[1] //outputs 3
+
+
+//Compound Objects
+const objects = [
+    {name: 'Alex', lastName: 'Albaran'},
+    {name: 'Jakob', lastName: 'Ehlers', 
+    printOut: function() {
+        console.log('Hi');  
+    }};
+];
+
+objects[1].printOut(); // Calls out function
+
