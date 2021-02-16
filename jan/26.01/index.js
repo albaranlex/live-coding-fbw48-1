@@ -41,3 +41,66 @@ console.log(average(0));
 console.log(average(1, 2));
 console.log(average(1, 3, 6, 10));
 console.log(average(12, 14, 16));
+
+//reduce
+const reducer = (acc, cur) => acc + cur;
+const resultArr = [1, 2, 3, 4].reduce(reducer, 0);
+console.log(resultArr);
+
+//filter
+const names = ["Mark", "Mike", "Vince"];
+const filArr = names.filter((name) => name.length > 3);
+console.log(filArr);
+
+//find
+const coolNums = [1, 2, 3, 43, 5, 6, 7];
+const biggerThanFive = coolNums.find((num) => num > 5);
+console.log(biggerThanFive);
+
+//sumOfNumbers using reduce
+const sumNumbers = (...args) => args.reduce((acc, cur) => acc + cur);
+console.log(sumNumbers(1, 2, 3));
+
+//toCamelCase using map
+const toCamelCase = (str) => {
+  let strToArr = str.toLowerCase().split("_");
+  let result = strToArr.map((item, i) =>
+    1 > i ? item : item[0].toUpperCase() + item.slice(1)
+  );
+  return result.join("");
+};
+console.log(toCamelCase("cool_fun_things"));
+
+//hackerSpeak
+/***c4n y0u r34d th15?**
+Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version 
+of the string.
+NB: for your program to work properly, 
+the function should replace all 'a's with 4, 'e's with 3, 'i's with 1, 'o's with 0, and 's's with 5.
+
+Examples:
+* hackerSpeak("javascript is cool") ➞ "j4v45cr1pt 15 c00l"
+* hackerSpeak("programming is fun") ➞ "pr0gr4mm1ng 15 fun"
+* hackerSpeak("become a coder") ➞ "b3c0m3 4 c0d3r" */
+
+const hackerSpeak = (orig, replacements = { a: "4", e: "3", i: "1", o: "0" }) =>
+  Object.entries(replacements).reduce(
+    (acc, el) => acc.replace(el[0], el[1]),
+    orig
+  );
+
+console.log(hackerSpeak("javascript is cool"));
+
+/* Create a program that changes a given array by adding 1 to each odd integer and 
+subtracting 1 from each even integer. */
+
+const isEven = (...num) => {
+  let result = "";
+  if (num % 2 == 0) {
+    result = num + 1;
+  } else {
+    result = num - 1;
+  }
+  return result;
+};
+console.log(isEven(1, 2, 3));
