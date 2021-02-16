@@ -4,9 +4,8 @@
 const wordArr = ["smart", "kind", "sweet", "small", "clear"];
 
 //Method One
-const arr2 = ["smart", "kind", "sweet", "small", "clear"];
 const wordConverter1 = (arr) => arr.map((item) => item + "er");
-console.log(wordConverter1(arr2));
+console.log(wordConverter1(wordArr));
 
 //Method 2
 const wordConverter2 = (arr) => {
