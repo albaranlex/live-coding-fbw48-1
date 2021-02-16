@@ -12,7 +12,7 @@ console.log(wordConverter1(arr2));
 const wordConverter2 = (arr) => {
   let result = [];
   for (let i = 0; i < arr.length; i++) {
-    result += arr[i] + "er" + " ";
+    result.push(arr[i] + "er");
   }
   return result;
 };
@@ -22,7 +22,7 @@ console.log(wordConverter2(wordArr));
 const wordConverter3 = (arr) => {
   let result = [];
   for (let word in arr) {
-    result += arr[word] + "er" + " ";
+    result.push(arr[word] + "er");
   }
   return result;
 };
