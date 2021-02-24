@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Railway";
+  src: url("../fonts/Raleway/static/Raleway-Thin.ttf");
+}
+
+h1 {
+  font-family: "Railway";
+  color: red;
+}
+
+div {
+  height: 3rem;
+  width: 3rem;
+  border: black 2px solid;
+  display: inline-block;
+}
+
+.rectangle {
+  background-color: rgb(54, 136, 202);
+  width: 6rem;
+}
+
+.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid rgb(99, 61, 121);
+  border-right: 100px solid transparent;
+}
+
+.square {
+  background-color: rgb(31, 75, 31);
+}
+
+.circle {
+  background-color: rgb(255, 239, 98);
+  border-radius: 2rem;
+}
+
+.draw {
+  background-color: brown;
+  height: 3rem;
+  width: 3rem;
+  border: black 2px solid;
+  display: inline-block;
+  box-shadow: 5px 5px 5px black;
+  transform: rotate(20deg);
+}
+
+.some {
+  background-color: mediumseagreen;
+  height: 3rem;
+  width: 3rem;
+  border: black 2px solid;
+  display: inline-block;
+  transform: scale(2, 2);
+  opacity: 0.5;
+  z-index: 10;
+}
