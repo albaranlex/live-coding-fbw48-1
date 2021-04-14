@@ -12,7 +12,12 @@
    “clean:styles”: “rm -rf src/styles”,
    “copy”: “mkdir dist && rsync -avr --exclude=\“/scss\” src/ dist”,
    “publish”: “gh-pages -d dist”
-5. create .gitignore in root/main folder and add node modules to .gitignore
+5. create .gitignore in root/main folder and add the following to .gitignore:
+    * node modules
+    * dist
+    * src ? (not sure)
+    * DS_Store 
+    
 6. add folder to root/main folder: “src”
 7. add “index.html” to “src”
 8. add folder “scss” to folder “src”
