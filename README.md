@@ -7,4 +7,4 @@
 1. JavaScript [variables and the basics](./dec/17-12/index.js)
 
 ## SASS
-1. SASS Boiler Plate SetUp [link](./apr/14.04/README.md)
+1. SASS Boiler Plate [Setup](./apr/14.04/README.md)
