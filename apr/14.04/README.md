@@ -15,7 +15,7 @@
 5. create .gitignore in root/main folder and add the following to .gitignore:
     * node modules
     * dist
-    * src ? (not sure)
+    * src/styles
     * DS_Store 
     
 6. add folder to root/main folder: “src”
