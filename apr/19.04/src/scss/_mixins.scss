@@ -1,0 +1,22 @@
+// Center content
+@mixin center($background) {
+    display: grid;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+  }
+
+@mixin textColor() {
+    color: #132c33;
+    border: none;
+    font-size: 50px;
+    height: 10px;
+}
+
+@mixin bounce() {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

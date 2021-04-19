@@ -1,0 +1,16 @@
+.main-container{
+    @include center(#d8e3e7);
+  }
+
+.first {
+    @include center(#51c4d3);
+}
+
+.second {
+    @include center(#126e82);
+}
+.next {
+    p {
+    @include textColor();
+    }
+}
