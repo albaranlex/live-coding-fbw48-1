@@ -1,0 +1,29 @@
+##SETUP
+1. install node modules
+>npm init
+
+2. create ignore file 
+> .gitignore
+
+3.create config.js with the following contents
+
+> conig.js
+
+module.exports="123KEY";
+
+module.exports = {
+    apiID: "1234567",
+    apiKey: "123KEY"
+};
+
+4.create src directory
+5. create index.js file inside src directory
+6. inside index.js
+
+>#!/usr/bin/env node
+//this is a commmand that runs shebang
+
+>const weather = require ("./lib/weather");
+>const args = process.argv.slice(2);
+
+
